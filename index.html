@@ -1138,7 +1138,29 @@ img{
 </style>
 
 </head>
+<script>
+/* GitHub Pages image path fix */
+document.querySelectorAll('img').forEach(function(img) {
+    const src = img.getAttribute('src');
 
+    if (src && src.startsWith('/')) {
+        img.src = '/mehdi-mir' + src;
+    }
+});
+
+/* Fix favicon / apple icon */
+document.querySelectorAll('link[href]').forEach(function(link) {
+    const href = link.getAttribute('href');
+
+    if (
+        href &&
+        href.startsWith('/') &&
+        (link.rel.includes('icon') || link.rel.includes('apple-touch-icon'))
+    ) {
+        link.href = '/mehdi-mir' + href;
+    }
+});
+</script>
 <body>
 
 <div class="top-bar">
