@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/png" href="/logo2.jpg">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Meet the teachers and faculty members of The Wisdom School & College, Danyore, Gilgit.">
+
+    <meta name="keywords"
+          content="The Wisdom School College faculty, teachers Danyore Gilgit, school staff">
+
+    <meta name="author"
+          content="The Wisdom School & College">
+
+    <title>Faculty | The Wisdom School & College</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8fc;
+            color: #172033;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ================= TOP BAR ================= */
+
+        .top-bar {
+            min-height: 42px;
+            padding: 7px 5%;
+            background: #061a38;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .top-bar-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .top-bar a {
+            color: white;
+            transition: .3s;
+        }
+
+        .top-bar a:hover {
+            color: #f5c542;
+        }
+
+        .top-bar i {
+            color: #f5c542;
+            margin-right: 6px;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 8px;
+        }
+
+        .top-bar-right a {
+            width: 29px;
+            height: 29px;
+            border: 1px solid rgba(255,255,255,.25);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-bar-right i {
+            margin: 0;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* ================= HEADER ================= */
+
+        .main-header {
+            background: rgba(255,255,255,.97);
+            box-shadow: 0 5px 25px rgba(0,0,0,.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            width: 90%;
+            max-width: 1250px;
+            min-height: 82px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .school-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #061a38;
+        }
+
+        .logo-box {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #f5c542;
+            box-shadow: 0 5px 18px rgba(0,0,0,.15);
+            flex-shrink: 0;
+        }
+
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text strong {
+            font-size: 21px;
+            line-height: 1;
+        }
+
+        .logo-text span {
+            margin-top: 5px;
+            color: #b68c16;
+            font-size: 9px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* ================= NAV ================= */
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .main-nav a {
+            color: #172033;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 11px 13px;
+            border-radius: 8px;
+            transition: .3s;
+        }
+
+        .main-nav a:hover,
+        .main-nav a.active {
+            color: white;
+            background: #061a38;
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            border: 0;
+            border-radius: 9px;
+            background: #061a38;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* ================= MOBILE MENU ================= */
+
+        .mobile-menu {
+            display: none;
+            background: #061a38;
+            padding: 8px 5%;
+        }
+
+        .mobile-menu a {
+            display: block;
+            color: white;
+            padding: 14px 10px;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            font-weight: 600;
+        }
+
+        .mobile-menu a:hover,
+        .mobile-menu a.active {
+            color: #f5c542;
+        }
+
+        /* ================= HERO ================= */
+
+        .faculty-hero {
+            min-height: 470px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(3,18,43,.96),
+                    rgba(9,39,77,.88)
+                ),
+                url("/logo2.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .faculty-hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            border: 1px solid rgba(245,197,66,.25);
+            right: -180px;
+            top: -220px;
+        }
+
+        .faculty-hero::after {
+            content: "";
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,.1);
+            left: -160px;
+            bottom: -200px;
+        }
+
+        .faculty-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .faculty-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 10px 18px;
+            border: 1px solid rgba(245,197,66,.55);
+            border-radius: 50px;
+            color: #f5c542;
+            background: rgba(245,197,66,.08);
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1.7px;
+        }
+
+        .faculty-hero h1 {
+            color: white;
+            font-size: clamp(43px, 7vw, 76px);
+            line-height: 1.05;
+            margin: 22px 0 15px;
+        }
+
+        .faculty-hero h1 span {
+            display: block;
+            color: #f5c542;
+        }
+
+        .faculty-hero p {
+            max-width: 680px;
+            margin: auto;
+            color: rgba(255,255,255,.82);
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* ================= INTRO ================= */
+
+        .faculty-intro {
+            background: white;
+            padding: 85px 20px 55px;
+        }
+
+        .faculty-container {
+            width: 90%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        .faculty-heading {
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .faculty-heading span {
+            color: #b68c16;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .faculty-heading h2 {
+            color: #061a38;
+            font-size: clamp(32px, 5vw, 45px);
+            margin: 12px 0;
+        }
+
+        .faculty-heading h2 strong {
+            color: #c29a28;
+        }
+
+        .faculty-heading p {
+            color: #687386;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* ================= FACULTY SECTION ================= */
+
+        .faculty-section {
+            padding: 55px 20px 100px;
+            background: #f5f8fc;
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        /* ================= CARD ================= */
+
+        .faculty-card {
+            position: relative;
+            background: white;
+            border: 1px solid #e4eaf2;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(7,27,58,.07);
+            transition: .4s;
+        }
+
+        .faculty-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 22px 50px rgba(7,27,58,.15);
+        }
+
+        .faculty-photo {
+            height: 285px;
+            position: relative;
+            overflow: hidden;
+            background:
+                linear-gradient(
+                    135deg,
+                    #071b3a,
+                    #173b6b
+                );
+        }
+
+        .faculty-photo::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to top,
+                rgba(0,0,0,.25),
+                transparent 45%
+            );
+            pointer-events: none;
+        }
+
+        .faculty-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: .5s;
+        }
+
+        .faculty-card:hover .faculty-photo img {
+            transform: scale(1.07);
+        }
+
+        .faculty-photo > i {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%,-50%);
+            color: #f5c542;
+            font-size: 55px;
+        }
+
+        .faculty-photo > span {
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 65%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,.8);
+            font-size: 13px;
+        }
+
+        .faculty-info {
+            position: relative;
+            padding: 23px 22px 25px;
+        }
+
+        .faculty-number {
+            position: absolute;
+            right: 18px;
+            top: 20px;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #fff7dc;
+            color: #b68c16;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .faculty-info h3 {
+            color: #061a38;
+            font-size: 20px;
+            margin-bottom: 8px;
+            padding-right: 35px;
+        }
+
+        .faculty-info p {
+            color: #b68c16;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .faculty-info::before {
+            content: "";
+            position: absolute;
+            left: 22px;
+            top: 0;
+            width: 45px;
+            height: 3px;
+            background: #f5c542;
+        }
+
+        /* ================= CTA ================= */
+
+        .faculty-cta {
+            padding: 75px 20px;
+            background: #061a38;
+        }
+
+        .faculty-cta-content {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 45px;
+            border: 1px solid rgba(245,197,66,.35);
+            border-radius: 22px;
+            background: rgba(255,255,255,.04);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .faculty-cta span {
+            color: #f5c542;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .faculty-cta h2 {
+            color: white;
+            font-size: 31px;
+            margin: 10px 0;
+        }
+
+        .faculty-cta p {
+            color: rgba(255,255,255,.7);
+            line-height: 1.6;
+        }
+
+        .faculty-admission-btn {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 23px;
+            border-radius: 10px;
+            background: #f5c542;
+            color: #061a38;
+            font-weight: bold;
+            transition: .3s;
+        }
+
+        .faculty-admission-btn:hover {
+            background: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,.2);
+        }
+
+        /* ================= FOOTER ================= */
+
+        .site-footer {
+            background: #031329;
+            color: white;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 55px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .footer-container h3 {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+
+        .footer-container h4 {
+            color: #f5c542;
+            margin-bottom: 14px;
+        }
+
+        .footer-container p {
+            color: rgba(255,255,255,.65);
+            line-height: 1.8;
+        }
+
+        .footer-container i {
+            color: #f5c542;
+            margin-right: 7px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,.08);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-bottom p {
+            color: rgba(255,255,255,.5);
+            font-size: 13px;
+        }
+
+        /* ================= WHATSAPP ================= */
+
+        .whatsapp-button {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 59px;
+            height: 59px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 29px;
+            box-shadow: 0 8px 28px rgba(0,0,0,.22);
+            z-index: 9999;
+            transition: .3s;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.12);
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 1100px) {
+
+            .faculty-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .main-nav a {
+                padding: 10px 9px;
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 850px) {
+
+            .main-nav {
+                display: none;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .faculty-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .faculty-cta-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .top-bar {
+                padding: 7px 4%;
+            }
+
+            .top-bar-left {
+                gap: 8px;
+                font-size: 11px;
+            }
+
+            .top-bar-left a:nth-child(2) {
+                display: none;
+            }
+
+            .header-container {
+                width: 92%;
+                min-height: 72px;
+            }
+
+            .logo-box {
+                width: 50px;
+                height: 50px;
+            }
+
+            .logo-text strong {
+                font-size: 18px;
+            }
+
+            .logo-text span {
+                font-size: 8px;
+            }
+
+            .faculty-hero {
+                min-height: 410px;
+                padding: 65px 18px;
+            }
+
+            .faculty-hero p {
+                font-size: 15px;
+            }
+
+            .faculty-intro {
+                padding: 65px 18px 40px;
+            }
+
+            .faculty-section {
+                padding: 40px 15px 70px;
+            }
+
+            .faculty-grid {
+                grid-template-columns: 1fr;
+                max-width: 430px;
+                margin: auto;
+            }
+
+            .faculty-photo {
+                height: 330px;
+            }
+
+            .faculty-cta {
+                padding: 50px 15px;
+            }
+
+            .faculty-cta-content {
+                width: 100%;
+                padding: 30px 23px;
+            }
+
+            .faculty-cta h2 {
+                font-size: 25px;
+            }
+
+            .faculty-admission-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                padding: 45px 0;
+                gap: 25px;
+            }
+
+            .whatsapp-button {
+                width: 54px;
+                height: 54px;
+                right: 16px;
+                bottom: 16px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= TOP BAR ================= -->
+
+<div class="top-bar">
+
+    <div class="top-bar-left">
+
+        <a href="tel:03554540686">
+            <i class="fas fa-phone"></i>
+            0355-4540686
+        </a>
+
+        <a href="mailto:twsc72@gmail.com">
+            <i class="fas fa-envelope"></i>
+            twsc72@gmail.com
+        </a>
+
+    </div>
+
+    <div class="top-bar-right">
+
+        <a href="https://www.facebook.com/profile.php?id=100084517663144"
+           target="_blank"
+           rel="noopener"
+           aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#"
+           aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="school-logo">
+
+            <div class="logo-box">
+
+                <img src="/logo2.jpg"
+                     alt="The Wisdom School & College Logo">
+
+            </div>
+
+            <div class="logo-text">
+
+                <strong>The Wisdom</strong>
+
+                <span>SCHOOL & COLLEGE</span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="main-nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="academics.html">Academics</a>
+
+            <a href="faculty.html" class="active">Faculty</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="admissions.html">Admissions</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MOBILE MENU ================= -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="academics.html">Academics</a>
+
+    <a href="faculty.html" class="active">Faculty</a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="admissions.html">Admissions</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="faculty-hero">
+
+    <div class="faculty-hero-content">
+
+        <span class="faculty-badge">
+            <i class="fas fa-chalkboard-user"></i>
+            OUR FACULTY
+        </span>
+
+        <h1>
+            Meet Our
+            <span>Teachers</span>
+        </h1>
+
+        <p>
+            Our dedicated faculty members work to provide
+            students with a supportive, inspiring and effective
+            learning environment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="faculty-intro">
+
+    <div class="faculty-container">
+
+        <div class="faculty-heading">
+
+            <span>TEACHERS & STAFF</span>
+
+            <h2>
+                Our Dedicated
+                <strong>Faculty</strong>
+            </h2>
+
+            <p>
+                Meet the teachers and staff members who contribute
+                to the academic and educational environment of
+                The Wisdom School & College.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FACULTY ================= -->
+
+<section class="faculty-section">
+
+    <div class="faculty-container">
+
+        <div class="faculty-grid">
+
+
+            <!-- 01 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/ayaz.jpg"
+                         alt="Ayaz Mir - Principal">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">01</span>
+
+                    <h3>Ayaz Mir</h3>
+
+                    <p>Principal</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/ali sher.jpeg"
+                         alt="Ali Sher - Chemistry Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">02</span>
+
+                    <h3>Ali Sher</h3>
+
+                    <p>Chemistry Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/asghar.jpg"
+                         alt="Ali Asghar - Chemistry Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">03</span>
+
+                    <h3>Ali Asghar</h3>
+
+                    <p>Chemistry Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/shar mir.jpeg"
+                         alt="Sahar Mir - Mathematics Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">04</span>
+
+                    <h3>Sahar Mir</h3>
+
+                    <p>Mathematics Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 05 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/sharbaz.jpeg"
+                         alt="Sharbaz - English Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">05</span>
+
+                    <h3>Sharbaz</h3>
+
+                    <p>English Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 06 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/sarfraz ali.jpeg"
+                         alt="Sarfraz Haider - Physics Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">06</span>
+
+                    <h3>Sarfraz Haider</h3>
+
+                    <p>Physics Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 07 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/ayaz.jpg"
+                         alt="Ayaz Mir - Physics Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">07</span>
+
+                    <h3>Ayaz Mir</h3>
+
+                    <p>Physics Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 08 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/mujeeb.jpeg"
+                         alt="Mujeeb Ali - Computer Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">08</span>
+
+                    <h3>Mujeeb Ali</h3>
+
+                    <p>Computer Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 09 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/rahmat.jpeg"
+                         alt="Rahmat Ali - Biology Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">09</span>
+
+                    <h3>Rahmat Ali</h3>
+
+                    <p>Biology Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 10 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/anjum.jpeg"
+                         alt="Anjum Ali - Urdu Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">10</span>
+
+                    <h3>Anjum Ali</h3>
+
+                    <p>Urdu Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 11 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <i class="fas fa-user"></i>
+
+                    <span>Photo Coming Soon</span>
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">11</span>
+
+                    <h3>Nizam Ali</h3>
+
+                    <p>Social Studies Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 12 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <img src="/arif.jpg"
+                         alt="Arif Ali - Islamiat Teacher">
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">12</span>
+
+                    <h3>Arif Ali</h3>
+
+                    <p>Islamiat Teacher</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- 13 -->
+
+            <div class="faculty-card">
+
+                <div class="faculty-photo">
+
+                    <i class="fas fa-user"></i>
+
+                    <span>Photo Coming Soon</span>
+
+                </div>
+
+                <div class="faculty-info">
+
+                    <span class="faculty-number">13</span>
+
+                    <h3>Shehzena Batool</h3>
+
+                    <p>Accountant</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="faculty-cta">
+
+    <div class="faculty-cta-content">
+
+        <div>
+
+            <span>
+                THE WISDOM SCHOOL & COLLEGE
+            </span>
+
+            <h2>
+                Learn With Dedicated Teachers
+            </h2>
+
+            <p>
+                Our faculty is committed to supporting
+                students throughout their academic journey.
+            </p>
+
+        </div>
+
+        <a href="admissions.html"
+           class="faculty-admission-btn">
+
+            <i class="fas fa-arrow-right"></i>
+
+            Apply For Admission
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                The Wisdom School & College
+            </h3>
+
+            <p>
+                <i class="fas fa-location-dot"></i>
+                Danyore, Gilgit
+            </p>
+
+            <p>
+                Quality education for a better future.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>Contact</h4>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                0355-4540686
+            </p>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                twsc72@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 The Wisdom School & College.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a href="https://wa.me/923554540686"
+   class="whatsapp-button"
+   target="_blank"
+   rel="noopener"
+   aria-label="Contact us on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+    const menuToggle =
+        document.getElementById("menuToggle");
+
+    const mobileMenu =
+        document.getElementById("mobileMenu");
+
+    menuToggle.addEventListener("click", function () {
+
+        if (mobileMenu.style.display === "block") {
+
+            mobileMenu.style.display = "none";
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.innerHTML =
+                '<i class="fas fa-bars"></i>';
+
+        } else {
+
+            mobileMenu.style.display = "block";
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+            menuToggle.innerHTML =
+                '<i class="fas fa-xmark"></i>';
+
+        }
+
+    });
+
+</script>
+
+
+</body>
+</html>

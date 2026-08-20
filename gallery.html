@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Explore the campus, activities, events and memorable moments of The Wisdom School & College, Danyore, Gilgit.">
+
+<meta name="keywords"
+content="The Wisdom School College gallery, Danyore school photos, Gilgit school gallery, school events">
+
+<meta name="author"
+content="The Wisdom School & College">
+
+<meta name="robots" content="index, follow">
+
+<link rel="icon" type="image/png" href="/logo2.jpg">
+
+<title>Gallery | The Wisdom School & College</title>
+
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+rel="stylesheet">
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#f5f8fc;
+    color:#172033;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top-bar{
+    background:#071b34;
+    color:white;
+    padding:10px 0;
+    font-size:13px;
+}
+
+.top-bar-inner{
+    width:min(1180px,92%);
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.top-contact{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.top-contact span{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#d9e5f5;
+}
+
+.top-contact i{
+    color:#f4b942;
+}
+
+.top-social{
+    display:flex;
+    gap:8px;
+}
+
+.top-social a{
+    width:30px;
+    height:30px;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    transition:.3s;
+}
+
+.top-social a:hover{
+    background:#f4b942;
+    color:#071b34;
+    transform:translateY(-2px);
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.nav{
+    min-height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#071b34;
+}
+
+.logo img{
+    width:52px;
+    height:52px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo strong{
+    display:block;
+    font-family:"Poppins",sans-serif;
+    font-size:20px;
+    line-height:1;
+}
+
+.logo span{
+    display:block;
+    font-size:10px;
+    letter-spacing:2px;
+    font-weight:700;
+    color:#718096;
+    margin-top:5px;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+.nav-links a{
+    color:#334155;
+    padding:11px 14px;
+    border-radius:9px;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background:#071b34;
+    color:white;
+}
+
+.menu-btn{
+    display:none;
+    border:0;
+    background:#071b34;
+    color:white;
+    width:43px;
+    height:43px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.gallery-hero{
+    min-height:540px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:
+        linear-gradient(120deg,rgba(4,20,40,.96),rgba(7,27,52,.78)),
+        url("/school photo 3.jpg") center/cover;
+}
+
+.gallery-hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(244,185,66,.12);
+    top:-250px;
+    right:-150px;
+}
+
+.gallery-hero::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.12);
+    bottom:-200px;
+    left:-100px;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    padding:70px 0;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:9px 17px;
+    border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.09);
+    backdrop-filter:blur(8px);
+    border-radius:50px;
+    font-size:12px;
+    letter-spacing:2px;
+    font-weight:700;
+    color:#ffd778;
+    margin-bottom:22px;
+}
+
+.hero-content h1{
+    font-family:"Poppins",sans-serif;
+    font-size:clamp(40px,6vw,72px);
+    line-height:1.05;
+    margin-bottom:22px;
+}
+
+.hero-content h1 span{
+    display:block;
+    color:#f4b942;
+}
+
+.hero-content p{
+    max-width:680px;
+    margin:auto;
+    color:#dbe7f5;
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.intro{
+    padding:90px 0 55px;
+    text-align:center;
+}
+
+.section-label{
+    color:#d39416;
+    font-size:12px;
+    letter-spacing:3px;
+    font-weight:800;
+}
+
+.intro h2{
+    font-family:"Poppins",sans-serif;
+    font-size:42px;
+    margin:12px 0 15px;
+    color:#071b34;
+}
+
+.intro h2 span{
+    color:#d39416;
+}
+
+.intro p{
+    max-width:700px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   GALLERY SECTION
+===================================================== */
+
+.gallery-section{
+    padding:55px 0 90px;
+}
+
+.gallery-section.dark{
+    background:#071b34;
+    color:white;
+}
+
+.section-heading{
+    margin-bottom:35px;
+}
+
+.section-heading h2{
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    margin-top:8px;
+}
+
+.dark .section-heading h2{
+    color:white;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+
+/* =====================================================
+   PHOTO CARD
+===================================================== */
+
+.photo-card{
+    position:relative;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(15,23,42,.09);
+    transition:.4s;
+}
+
+.photo-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(15,23,42,.16);
+}
+
+.dark .photo-card{
+    background:#102946;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.photo{
+    height:290px;
+    position:relative;
+    overflow:hidden;
+    background:#e8eef5;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.photo-card:hover .photo img{
+    transform:scale(1.08);
+}
+
+.photo::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.5),
+        transparent 55%
+    );
+    pointer-events:none;
+}
+
+.photo-icon{
+    position:absolute;
+    top:16px;
+    right:16px;
+    z-index:2;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:rgba(255,255,255,.9);
+    color:#071b34;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.photo-info{
+    padding:20px 22px 23px;
+}
+
+.photo-info h3{
+    font-family:"Poppins",sans-serif;
+    font-size:20px;
+    margin-bottom:6px;
+}
+
+.photo-info p{
+    color:#718096;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.dark .photo-info p{
+    color:#b8c7d9;
+}
+
+
+/* =====================================================
+   FEATURED PHOTO
+===================================================== */
+
+.featured{
+    grid-column:span 2;
+}
+
+.featured .photo{
+    height:370px;
+}
+
+
+/* =====================================================
+   COMING SOON
+===================================================== */
+
+.coming{
+    padding:85px 20px;
+    text-align:center;
+    background:
+        linear-gradient(135deg,#eef5fc,#ffffff);
+}
+
+.coming-icon{
+    width:75px;
+    height:75px;
+    border-radius:22px;
+    background:#071b34;
+    color:#f4b942;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    margin:0 auto 20px;
+    box-shadow:0 12px 30px rgba(7,27,52,.18);
+}
+
+.coming h2{
+    font-family:"Poppins",sans-serif;
+    font-size:32px;
+    color:#071b34;
+    margin-bottom:10px;
+}
+
+.coming p{
+    color:#64748b;
+    max-width:600px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta{
+    padding:70px 0;
+    background:#071b34;
+    color:white;
+}
+
+.cta-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.cta small{
+    color:#f4b942;
+    letter-spacing:2px;
+    font-weight:800;
+}
+
+.cta h2{
+    font-family:"Poppins",sans-serif;
+    font-size:35px;
+    margin:8px 0;
+}
+
+.cta p{
+    color:#b9c8da;
+}
+
+.cta-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 22px;
+    background:#f4b942;
+    color:#071b34;
+    border-radius:10px;
+    font-weight:800;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(244,185,66,.25);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer{
+    background:#04101f;
+    color:white;
+    padding:60px 0 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.footer-logo img{
+    width:48px;
+    height:48px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.footer h3{
+    font-family:"Poppins",sans-serif;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#9fb0c4;
+    line-height:1.8;
+    font-size:14px;
+}
+
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.footer-links a{
+    color:#aebdce;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#f4b942;
+    padding-left:5px;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+    color:#8191a4;
+    font-size:13px;
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25d366;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    z-index:999;
+    box-shadow:0 10px 30px rgba(37,211,102,.35);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:850px){
+
+    .top-bar{
+        display:none;
+    }
+
+    .nav{
+        min-height:70px;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:white;
+        padding:15px;
+        flex-direction:column;
+        box-shadow:0 12px 25px rgba(0,0,0,.1);
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links a{
+        width:100%;
+        text-align:center;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .gallery-hero{
+        min-height:470px;
+    }
+
+    .hero-content h1{
+        font-size:43px;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .featured{
+        grid-column:span 1;
+    }
+
+    .featured .photo{
+        height:290px;
+    }
+
+    .photo{
+        height:260px;
+    }
+
+    .cta-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .intro{
+        padding:65px 0 35px;
+    }
+
+    .intro h2{
+        font-size:31px;
+    }
+
+    .hero-content h1{
+        font-size:37px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+    }
+
+    .gallery-section{
+        padding:40px 0 60px;
+    }
+
+    .section-heading h2{
+        font-size:29px;
+    }
+
+    .cta h2{
+        font-size:28px;
+    }
+
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.hero-content{
+    animation:fadeUp .9s ease;
+}
+
+.photo-card{
+    animation:fadeUp .7s ease both;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+    <div class="top-bar-inner">
+
+        <div class="top-contact">
+
+            <span>
+                <i class="fas fa-phone"></i>
+                03555555941
+            </span>
+
+            <span>
+                <i class="fas fa-envelope"></i>
+                twsc72@gmail.com
+            </span>
+
+        </div>
+
+
+        <div class="top-social">
+
+            <a href="https://www.facebook.com/profile.php?id=100084517663144"
+               target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="index.html" class="logo">
+
+            <img src="/logo2.jpg"
+                 alt="The Wisdom School & College Logo">
+
+            <div>
+
+                <strong>The Wisdom</strong>
+
+                <span>SCHOOL & COLLEGE</span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="academics.html">
+                Academics
+            </a>
+
+            <a href="faculty.html">
+                Faculty
+            </a>
+
+            <a href="gallery.html" class="active">
+                Gallery
+            </a>
+
+            <a href="admissions.html">
+                Admissions
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <button class="menu-btn"
+                id="menuBtn"
+                aria-label="Open Menu">
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="gallery-hero">
+
+    <div class="container hero-content">
+
+        <span class="hero-badge">
+
+            <i class="fas fa-images"></i>
+
+            OUR GALLERY
+
+        </span>
+
+
+        <h1>
+
+            Moments That
+
+            <span>Inspire Us</span>
+
+        </h1>
+
+
+        <p>
+
+            Explore memorable moments, school activities,
+            events and campus life at The Wisdom School & College.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro">
+
+    <div class="container">
+
+        <span class="section-label">
+            SCHOOL MEMORIES
+        </span>
+
+        <h2>
+
+            Explore Our
+            <span>Gallery</span>
+
+        </h2>
+
+        <p>
+
+            Take a visual journey through our campus,
+            classrooms, activities and special moments
+            from The Wisdom School & College.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CAMPUS
+===================================================== -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                CAMPUS
+            </span>
+
+            <h2>
+                Our School Campus
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="photo-card featured">
+
+                <div class="photo">
+
+                    <img src="/school photo 3.jpg"
+                         alt="The Wisdom School and College campus">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        School Campus
+                    </h3>
+
+                    <p>
+                        The Wisdom School & College, Danyore Gilgit
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/school img.jpg"
+                         alt="School building">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        School Building
+                    </h3>
+
+                    <p>
+                        Our educational environment
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/school photo 3.jpg"
+                         alt="School entrance">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        School Entrance
+                    </h3>
+
+                    <p>
+                        Welcome to our institution
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACTIVITIES
+===================================================== -->
+
+<section class="gallery-section dark">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                ACTIVITIES
+            </span>
+
+            <h2>
+                Learning & Activities
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/acadimic activity.jpg"
+                         alt="Academic activity">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        Academic Activities
+                    </h3>
+
+                    <p>
+                        Students participating in learning activities
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/school img.jpg"
+                         alt="Student activity">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        Student Activities
+                    </h3>
+
+                    <p>
+                        Learning beyond the classroom
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/acadimic activity.jpg"
+                         alt="Classroom learning">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        Practical Learning
+                    </h3>
+
+                    <p>
+                        Building knowledge through activities
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EVENTS
+===================================================== -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                EVENTS
+            </span>
+
+            <h2>
+                School Events & Memories
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/school photo 3.jpg"
+                         alt="School event">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-calendar-days"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        School Events
+                    </h3>
+
+                    <p>
+                        Memorable moments from school life
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/acadimic activity.jpg"
+                         alt="School ceremony">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        Special Ceremonies
+                    </h3>
+
+                    <p>
+                        Celebrating achievements together
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="photo-card">
+
+                <div class="photo">
+
+                    <img src="/school img.jpg"
+                         alt="Special school moment">
+
+                    <div class="photo-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                </div>
+
+                <div class="photo-info">
+
+                    <h3>
+                        Special Moments
+                    </h3>
+
+                    <p>
+                        Memories we proudly share
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     COMING SOON
+===================================================== -->
+
+<section class="coming">
+
+    <div class="container">
+
+        <div class="coming-icon">
+
+            <i class="fas fa-camera"></i>
+
+        </div>
+
+        <h2>
+            More Photos Coming Soon
+        </h2>
+
+        <p>
+
+            More school photos, student activities,
+            events and campus memories will be added
+            to our gallery.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+<section class="cta">
+
+    <div class="container cta-inner">
+
+        <div>
+
+            <small>
+                THE WISDOM SCHOOL & COLLEGE
+            </small>
+
+            <h2>
+                Have Questions?
+            </h2>
+
+            <p>
+                Contact our school administration for more information.
+            </p>
+
+        </div>
+
+
+        <a href="https://wa.me/923554540686"
+           target="_blank"
+           class="cta-btn">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Contact on WhatsApp
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+
+        <div>
+
+            <div class="footer-logo">
+
+                <img src="/logo2.jpg"
+                     alt="School Logo">
+
+                <div>
+
+                    <h3>
+                        The Wisdom
+                    </h3>
+
+                    <p>
+                        School & College
+                    </p>
+
+                </div>
+
+            </div>
+
+            <p>
+
+                The Wisdom School & College,
+                Danyore, Gilgit — providing
+                quality education for students.
+
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <div class="footer-links">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="academics.html">Academics</a>
+
+                <a href="faculty.html">Faculty</a>
+
+                <a href="gallery.html">Gallery</a>
+
+                <a href="admissions.html">Admissions</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                <i class="fas fa-location-dot"></i>
+                Near Alamdar Road, Back Market,
+                Danyore, Gilgit
+            </p>
+
+            <br>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                03555555941
+            </p>
+
+            <br>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                twsc72@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 The Wisdom School & College,
+        Danyore Gilgit. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     WHATSAPP
+===================================================== -->
+
+<a href="https://wa.me/923554540686"
+   class="whatsapp"
+   target="_blank"
+   aria-label="Contact on WhatsApp">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function(){
+
+    navLinks.classList.toggle("show");
+
+    const icon = menuBtn.querySelector("i");
+
+    if(navLinks.classList.contains("show")){
+
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+
+    }else{
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+    }
+
+});
+
+</script>
+
+
+</body>
+</html>
